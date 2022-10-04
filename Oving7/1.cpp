@@ -40,4 +40,14 @@ int main() {
   while (b > a)
     b -= a;
   print("b = ", b);
+
+  cout << "\nAfter operator overloading minus \n";
+  Fraction fraction1(3, 4);
+  Fraction fraction2 = fraction1;
+  print("brøk: ", fraction1);
+  print("brøk: ", fraction2);
+  fraction1 = fraction1 - 5;
+  print("brøk minus tall: ", fraction1);
+  fraction2 = 5 - fraction2;
+  print("tall minus brøk: ", fraction2);
 }
