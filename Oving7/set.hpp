@@ -10,4 +10,9 @@ public:
 
   Set(std::vector<int> vector_);
   Set();
+  void set(vector<int> vector_);
+  Set operator<<(const Set &other) const;
+  Set &operator+=(const int &number);
+  Set &operator=(const Set &other);
+  void print();
 };
